@@ -1,0 +1,19 @@
+
+html {
+    font-family: 'Londrina Solid', cursive;
+    background-color:rgb(240, 165, 25);
+}
+ 
+#grad1 {
+    background-image: linear-gradient(to bottom right, rgb(184, 17, 17), rgb(240, 165, 25));
+    border-color:rgb(184, 17, 17);
+    background-color: red;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+#grad1 > h1 {
+    text-align: center;
+    font-size: 140px;
+}
