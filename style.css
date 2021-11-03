@@ -35,12 +35,76 @@
     text-align: center;
     margin: auto;
     margin-top: 10%;
+    -webkit-animation-name: puffIn;
+    animation-name: puffIn;
+    animation-duration: 2s;
+}
+      
+    @-webkit-keyframes puffIn {
+     0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        filter: blur(2px);
+        }
+        100% {
+          opacity: 1;
+          transform-origin: 50% 50%;
+          transform: scale(1, 1);
+          filter: blur(0px);
+        }
+      }
+    @keyframes puffIn {
+     0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        filter: blur(2px);
+}
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        filter: blur(0px);
+    }
 }
 
 .portada > h2 {
     font-size: 30px;
     color: white;
     text-align: center;
+    -webkit-animation-name: puffIn;
+    animation-name: puffIn;
+    animation-duration: 2s;
+}
+      
+    @-webkit-keyframes puffIn {
+     0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        filter: blur(2px);
+        }
+        100% {
+          opacity: 1;
+          transform-origin: 50% 50%;
+          transform: scale(1, 1);
+          filter: blur(0px);
+        }
+      }
+    @keyframes puffIn {
+     0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        filter: blur(2px);
+}
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        filter: blur(0px);
+    }
 }
 
 /*===================== CONTENEDORES MAIN1 =====================*/
@@ -94,7 +158,7 @@
 /*===================== CONTENEDORES WAVE =====================*/
 
 .contenedormain2 {
-    background-image: linear-gradient(to top , rgba(26, 115, 156, 0.308), rgba(19, 178, 241, 0.829)), url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1711/Stones-wall_1920x1080.jpg);
+    background-image: linear-gradient(to top , rgba(28, 69, 88, 0.342), rgba(27, 133, 175, 0.829)), url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1711/Stones-wall_1920x1080.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -108,18 +172,31 @@
     text-align: center;
     margin: auto;
     border: 15%;
-    width: 50%;
+    width: 70%;
     height: 50%;
     color: white;
+
 }
 
 .contenedor_imagenes {
-    display: block;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .contenedor_imagenes > img {
-    width: 50%;
+    width: 47%;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.contenedor_imagenes > img:hover {
+    width: 48%;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(23, 150, 201, 0.514);
+    padding: 0px;
 }
 
 
